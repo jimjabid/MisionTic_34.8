@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import VistaProductoHome from "./vistas/VistaProductoHome";
+import VistaProducto from "./vistas/VistaProducto";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Container>
           <Route path="/" component={VistaProductoHome} exact />
+          <Route path="/producto/:id" component={VistaProducto} />
         </Container>
       </main>
       <Footer />
