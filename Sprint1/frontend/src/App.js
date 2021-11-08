@@ -5,17 +5,22 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import VistaProductoHome from "./vistas/VistaProductoHome";
 import VistaProducto from "./vistas/VistaProducto";
+<<<<<<< HEAD
 import VistaRegistro from "./vistas/VistaRegistro";
+=======
+import VistaQuienesSomos from "./vistas/VistaQuienesSomos";
+>>>>>>> 6524f38c8ba6e484c49c7984522c2ae4bc930b9c
 
 function App() {
   return (
     <Router>
       <Header />
-      <main>
+      <main className="py-3">
         <Container>
         <Route path= "/registro" component={VistaRegistro} />
           <Route path="/" component={VistaProductoHome} exact />
           <Route path="/producto/:id" component={VistaProducto} />
+          <Route path="/quienesSomos" component={VistaQuienesSomos} />
         </Container>
       </main>
       <Footer />
